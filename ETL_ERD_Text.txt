@@ -1,0 +1,33 @@
+author
+-
+author_id PK int
+first_name varchar(100)
+last_name
+
+book
+-
+book_id PK int 
+title PK int
+publish_date
+
+auth_book
+----
+auth_id  PK int FK >- author.author_id
+b_id PK int FK >- book.book_id
+
+review
+------------
+review_id PK int
+source int FK >- source.source_id
+type varchar(30)
+
+source
+----
+source_id PK int
+source_name
+
+review_book
+----
+b_id PK int FK >- book.book_id
+r_id PK int FK >- review.review_id
+rating
