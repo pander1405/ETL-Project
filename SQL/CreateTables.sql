@@ -5,14 +5,14 @@ last_name varchar(30));
 
 create table book(
 book_id int primary key,
-title varchar(250))
-foreign key (author_fk) references author(author_id);
+title varchar(250),
+author_fk int,
+foreign key (author_fk) references author(author_id));
 
 create table source(
 source_id int primary key,
 source_name varchar(250),
 type varchar(30));
-
 
 create table review(
 review_id int primary key,
