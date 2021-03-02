@@ -8,8 +8,10 @@ Alisha Coffey, Brandy Brotherton, Chelsea Senter, and Paul Anderson <p><p>
 ## E
 [Goodreads.com Best of 2019 - User Ratings](https://www.goodreads.com/choiceawards/best-fiction-books-2019) <p>
 > Information extracted using web scraping techniques and exported to CSV. <p>
+> 
 [Amazon 50 Best Selling Books of 2009 - 2019 - Market Results](https://www.kaggle.com/sootersaalu/amazon-top-50-bestselling-books-2009-2019) <p>
 > CSV downloaded from Kaggle.com  <p>
+> 
 [New York Times - Book Critic Ratings](https://developer.nytimes.com/docs/books-product/1/routes/reviews.json/get) <p>
 > Requested from NYT’s API and exported to CSV <p>
 
