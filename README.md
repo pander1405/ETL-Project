@@ -26,9 +26,9 @@ Dataframe goodreads first needed data cleaning. Author Mary Beth Keane needed a 
 
 A relational database was preferable because of the ability to relate the different tables with book titles, author names, and ID numbers. In the SQL folder in the repository, we have an ERD, etl_schema.png (text file also included), and several tables in our PostgreSQL database called ETL_Project.  The CreateTables.sql file can be used to create the tables listed below: <p> <p>
 
-book: holds the book titles and the author id <p>
-author: holds the first and last name of the author <p>
-source: holds the source for the rating and what type it is (bestseller, user rating) <p>
-review: holds the actual review/rating information for each book <p> <p>
+> book: holds the book titles and the author id
+> author: holds the first and last name of the author
+> source: holds the source for the rating and what type it is (bestseller, user rating)
+> review: holds the actual review/rating information for each book <p>
 
 After the tables are created, the DatabaseTables.ipynb file can be run to populate all the tables with the data from the csv files <p>
