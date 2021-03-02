@@ -1,0 +1,24 @@
+author
+-
+author_id PK int
+first_name varchar(100)
+last_name varchar(100)
+
+book
+----
+book_id PK int 
+title varchar(250)
+author_fk int FK >- author.author_id
+
+source
+----
+source_id PK int
+source_name varchar(250)
+type varchar(30)
+
+review
+----
+review_id PK int 
+rating float
+book_fk int FK >- book.book_id
+source_fk int FK >- source.source_id
