@@ -15,10 +15,10 @@ Requested from NYT’s API and exported to CSV <p>
 
 
 ## T
-Amazon 50 Best Selling Books of 2009 - 2019 - Market Results <p>
+#### Amazon 50 Best Selling Books of 2009 - 2019 - Market Results
 Data frame needed to be filtered to only contain fiction books from 2019. Then author names needed to be split into first and last names, though some only had initials for the first and middle names (e.g. J.K. Rowling), some had two last names, some had a full first name with middle initial and a last name. All representations of author names were written into a loop to divide the names into separate “First” and “Last” name columns. The transformed data frame was used to create new CSVs that could then be used to read into PostgreSQL.
 
-Goodreads.com Best of 2019 - User Ratings <p>
+#### Goodreads.com Best of 2019 - User Ratings
 Dataframe goodreads first needed data cleaning. Author Mary Beth Keane needed a hyphen to work properly with the string split method used to separate Author First Name and Author Last name. Then, Author First & Last names were split using string split method to match the Amazon data which already had Author First & Last names separate. Then the Author column was dropped. Finally, the source column was added to record origin location.
 
 
