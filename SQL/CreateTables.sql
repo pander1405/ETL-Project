@@ -18,7 +18,6 @@ create table review(
 review_id int primary key,
 book_fk int,
 source_fk int,
-rating int,
-date varchar(30),
+rating float,
 foreign key (source_fk) references source(source_id),
 foreign key (book_fk) references book(book_id));
