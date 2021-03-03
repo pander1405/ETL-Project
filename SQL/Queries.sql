@@ -13,4 +13,4 @@ order by "Review_Total" desc;
 
 select title, first_name, last_name
 from book b
-inner join author a on b.author_fk = a.author_id;;
+inner join author a on b.author_fk = a.author_id;
