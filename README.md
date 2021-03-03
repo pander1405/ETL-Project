@@ -23,6 +23,9 @@ Data frame needed to be filtered to only contain fiction books from 2019. Then a
 #### Goodreads.com Best of 2019 - User Ratings
 Dataframe goodreads first needed data cleaning. Author Mary Beth Keane needed a hyphen to work properly with the string split method used to separate Author First Name and Author Last name. Then, Author First & Last names were split using string split method to match the Amazon data which already had Author First & Last names separate. Then the Author column was dropped. Finally, the source column was added to record origin location.
 
+#### New York Times 
+We wanted to use the New York Times (NYT) Books API to create a csv file of their best-sellers from 2019. First, the Books API was called and the results stored in a dataframe. NYT APIs paginates their results, so a combination of while and for loops were used to go through each page and retrieve the Title, Author, Rank, and Best-seller Dates. Some Books listed had more than one rank listing for 2019, so that also had to be accounted for in a for loop. After the dataframe was created, it was filtered for 2019 best-seller dates only and saved as a csv file.
+
 
 ## L
 
